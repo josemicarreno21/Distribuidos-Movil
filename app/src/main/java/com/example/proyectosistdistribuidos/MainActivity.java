@@ -6,33 +6,32 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button irEquipo;
+    ImageButton btnEquipo1, btnEquipo2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        irEquipo = findViewById(R.id.irEquipo);
+        btnEquipo1 = findViewById(R.id.btnEquipo1);
 
-        //TODO Optimizar esta mamada
-        irEquipo.setOnClickListener(new View.OnClickListener() {
+        btnEquipo1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Thread background = new Thread(){
-                    public void run(){
-                        try {
-                            sleep(500);
-                            Intent i = new Intent(getBaseContext(),EquiposActivity.class);
-                            startActivity(i);
-                            finish();
-                        }catch (Exception e){
-                        }
-                    }
-                };
-                background.start();
+                Intent i = new Intent(getBaseContext(),EquiposActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btnEquipo2 = findViewById(R.id.btnEquipo2);
+        btnEquipo2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getBaseContext(),EquiposActivity.class);
+                startActivity(i);
             }
         });
     }
