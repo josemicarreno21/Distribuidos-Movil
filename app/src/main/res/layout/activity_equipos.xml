@@ -95,16 +95,11 @@
                         android:textSize="25dp"
                         android:textStyle="bold" />
 
-                    <TextView
-                        android:id="@+id/nombreEntrenador"
-                        android:layout_width="wrap_content"
+                    <Button
+                        android:id="@+id/irEntrenador"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginBottom="5dp"
-                        android:text="Pepito Grillo"
-                        android:textColor="@color/white"
-                        android:textSize="25dp" />
+                        android:text="Pepito Grillo" />
                 </LinearLayout>
 
                 #Integrantes
