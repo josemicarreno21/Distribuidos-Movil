@@ -44,7 +44,7 @@
                         android:id="@+id/imgView"
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
-                        android:background="@drawable/CanchaBasket" />
+                        android:background="@drawable/canchabasket" />
                 </androidx.cardview.widget.CardView>
 
                 #Nombre Cancha
