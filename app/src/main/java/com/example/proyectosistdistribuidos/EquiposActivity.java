@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class EquiposActivity extends AppCompatActivity {
 
@@ -21,7 +22,7 @@ public class EquiposActivity extends AppCompatActivity {
         irJugador = findViewById(R.id.irJugador);
         irEntrenador = findViewById(R.id.irEntrenador);
         irDesempeñoEquipo = findViewById(R.id.irDesempeñoEquipo);
-        imageView = findViewById(R.id.imageView);
+        imageView = findViewById(R.id.imgView);
 
         irJugador.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,6 +46,15 @@ public class EquiposActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent desempeño = new Intent(getBaseContext(),Desempenio.class);
                 startActivity(desempeño);
+            }
+        });
+
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(EquiposActivity.this, "A", Toast.LENGTH_SHORT).show();
+                Intent detallado = new Intent(getBaseContext(),Info_Equipos.class);
+                startActivity(detallado);
             }
         });
     }
