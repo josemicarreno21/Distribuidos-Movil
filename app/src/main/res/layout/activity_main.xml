@@ -43,15 +43,23 @@
                 android:textSize="34sp" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/canchaInfo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="25/05/2022 15:20 PM\nLa Paz, Bolivia"
+                android:text="25/05/2022 15:20 PM"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/irCanchaInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="La Paz, Bolivia"
+                android:textSize="10sp" />
         </LinearLayout>
 
         <ImageButton
