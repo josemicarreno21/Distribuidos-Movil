@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
                 Thread background = new Thread(){
                     public void run(){
                         try {
-                            sleep(2500);
+                            sleep(500);
                             Intent i = new Intent(getBaseContext(),EquiposActivity.class);
                             startActivity(i);
                             finish();
