@@ -43,17 +43,9 @@ public class EquiposActivity extends AppCompatActivity {
         irDesempeñoEquipo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent desempeño = new Intent(getBaseContext(),)
-                //TODO ir a Activity DesempeñoEquipos
+                Intent desempeño = new Intent(getBaseContext(),Desempenio.class);
+                startActivity(desempeño);
             }
         });
-
-        imageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //TODO ir a Activity equipos Detallados
-            }
-        });
-
     }
 }

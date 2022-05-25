@@ -4,7 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/SERGIO/AndroidStudioProjects/Distribuidos-Movil/app/src/main/res/layout/activity_cancha_info.xml" value="0.1408514492753623" />
+        <entry key="..\:/Users/SERGIO/AndroidStudioProjects/Distribuidos-Movil/app/src/main/res/layout/activity_desempenio.xml" value="0.1408514492753623" />
         <entry key="..\:/Users/SERGIO/AndroidStudioProjects/Distribuidos-Movil/app/src/main/res/layout/activity_equipos.xml" value="0.22" />
+        <entry key="..\:/Users/SERGIO/AndroidStudioProjects/Distribuidos-Movil/app/src/main/res/layout/activity_info_equipos.xml" value="0.1408514492753623" />
         <entry key="..\:/Users/SERGIO/AndroidStudioProjects/Distribuidos-Movil/app/src/main/res/layout/activity_jugador.xml" value="0.1408514492753623" />
         <entry key="..\:/Users/SERGIO/AndroidStudioProjects/Distribuidos-Movil/app/src/main/res/layout/activity_main.xml" value="0.5" />
         <entry key="..\:/Users/SERGIO/AndroidStudioProjects/Distribuidos-Movil/app/src/main/res/layout/info_desempenio_equipo.xml" value="0.1408514492753623" />
