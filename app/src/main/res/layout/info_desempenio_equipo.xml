@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/CardViewCuentas"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    app:cardBackgroundColor="#17A2B7"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/linearlayout0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="6dp">
+
+
+            <LinearLayout
+                android:id="@+id/linearlayout"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical"
+                android:background="#206B75">
+
+                <TextView
+                    android:id="@+id/tvCodigoCuentaCu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="Falta tecnica por equipo"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvNombreCu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Falta Claudia Jimenez 1"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvPaternoCu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Falta Claudia Jimenez 1"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvPaisCu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Falta Claudia Jimenez 1"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvFechaNacCu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Falta Claudia Jimenez 1"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearlayout2"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/linearlayout"
+                android:layout_toRightOf="@+id/linearlayout"
+                android:orientation="vertical"
+                android:background="#206B75">
+
+                <TextView
+                    android:id="@+id/tvNombreUsuarioCu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="Faltas por jugador"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvTipoUsuarioCu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Falta Claudia Jimenez 1"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvEstadoCu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Falta Claudia Jimenez 1"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvFechacreacionCu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Falta Claudia Jimenez 1"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvCoinsCu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Falta Claudia Jimenez 1"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearlayoutx"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="150dp"
+                android:layout_toEndOf="@+id/linearlayout0"
+                android:layout_toRightOf="@+id/linearlayout0"
+                android:background="#206B75"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCodigoCuentaCud"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="Cantidad de puntos a favor del equipo"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvNombreCud"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cantidad de puntos en contra del equipo"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvPaternoCud"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cantidad de cestos anotados de 1 punto"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvPaisCus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cantidad de cestos anotados de 2 punto"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvFechaNacCus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cantidad de cestos anotados de 3 punto"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

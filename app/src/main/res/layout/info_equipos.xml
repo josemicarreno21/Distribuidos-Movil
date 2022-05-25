@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/CardViewCuentas"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    app:cardBackgroundColor="#17A2B7"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/IVIcono"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            app:srcCompat="@drawable/a" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="6dp">
+
+
+            <LinearLayout
+                android:id="@+id/linearlayout"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical"
+                android:background="#206B75">
+
+                <TextView
+                    android:id="@+id/tvCodigoCuentaCu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="Formacion"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tvNombreCu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jugador Claudia Jimenez en Base"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvPaternoCu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jugador Antonio Mendez en escolta"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvPaisCu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jugador Jose Carreño en Base"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvFechaNacCu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jugador Pablo Dominguez en Base"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearlayout2"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/linearlayout"
+                android:layout_toRightOf="@+id/linearlayout"
+                android:orientation="vertical"
+                android:background="#206B75">
+
+                <TextView
+                    android:id="@+id/tvNombreUsuarioCu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="Cambios realizados de los jugadores por equipo"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvTipoUsuarioCu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jugador Pablo Dominguez cambia a Base"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvEstadoCu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jugador Pablo Dominguez cambia a Base"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvFechacreacionCu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jugador Pablo Dominguez cambia a Base"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvCoinsCu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jugador Pablo Dominguez cambia a Base"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
