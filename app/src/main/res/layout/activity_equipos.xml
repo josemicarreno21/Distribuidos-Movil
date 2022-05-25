@@ -112,14 +112,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Integrantes"
-                        android:textSize="23dp"
-                        android:textColor="@color/white"/>
+
+
+
 
                     #Reemplazar por lista
+
+                    <Button
+                        android:id="@+id/irJugador"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ver Jugador" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
