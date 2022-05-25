@@ -10,7 +10,6 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     Button irEquipo;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         irEquipo = findViewById(R.id.irEquipo);
 
+        //TODO Optimizar esta mamada
         irEquipo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -33,10 +33,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 };
                 background.start();
-
             }
         });
-
-
     }
 }
