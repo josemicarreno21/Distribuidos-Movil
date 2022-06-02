@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="413dp"
         android:layout_height="230dp"
         android:layout_marginTop="20dp"
@@ -71,5 +72,15 @@
             app:srcCompat="@drawable/escudo2" />
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtXD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

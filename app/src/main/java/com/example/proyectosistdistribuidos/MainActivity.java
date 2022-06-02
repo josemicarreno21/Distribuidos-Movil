@@ -8,15 +8,28 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     ImageButton btnEquipo1, btnEquipo2;
     Button irCancha;
+
+    private static ConexionPG con=new ConexionPG();
+    TextView txtXD;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Recuperar un campo de la BD
+        txtXD = findViewById(R.id.txtXD);
+        try {
+            String storeProcedureCall="{CALL }";
+        }catch (Exception ex){
+
+        }
 
         btnEquipo1 = findViewById(R.id.btnEquipo1);
         btnEquipo1.setOnClickListener(new View.OnClickListener() {
