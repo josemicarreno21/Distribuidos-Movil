@@ -1,6 +1,7 @@
 package com.example.proyectosistdistribuidos;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -42,8 +43,39 @@ public class Equipos_Adapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        ViewHol
-        return null;
+        ViewHolder holder;
+
+        if(convertView==null){
+            LayoutInflater layoutInflater = LayoutInflater.from(this.context);
+            convertView=layoutInflater.inflate(this.layout,null);
+            holder = new ViewHolder(convertView);
+
+            convertView.setTag(holder);
+        }else {
+            holder=(ViewHolder)convertView.getTag();
+        }
+
+        Lista_Equipos lista1 = this.lista_equipos.get(position);
+        String nombre=lista1.getNombreEquipo();
+        String entrenador = lista1.getNombreEntrenador();
+        String puntosAnotados = lista1.getPuntosAnotados();
+        String puntosFavor = lista1.getPuntosFavor();
+        String puntosContra = lista1.getPuntosContra();
+        String cesto1 = lista1.getCesto1();
+        String cesto2 = lista1.getCesto2();
+        String cesto3 = lista1.getCesto3();
+
+        holder.tvNombre.setText(nombre);
+        holder.tvEntrenador.setText(entrenador);
+        holder.puntosAnotados.setText(puntosAnotados);
+        holder.puntosContra.setText(puntosContra);
+        holder.puntosFavor.setText(puntosFavor);
+        holder.cesto1.setText(cesto1);
+        holder.cesto2.setText(cesto2);
+        holder.cesto2.setText(cesto2);
+        holder.cesto3.setText(cesto3);
+
+        return convertView;
     }
 
     static class ViewHolder{
@@ -58,17 +90,13 @@ public class Equipos_Adapter extends BaseAdapter {
 
         public ViewHolder (View view){
             this.tvNombre=view.findViewById(R.id.nombreEquipo);
-            //this.tvEntrenador=view.findViewById(R.id.tvEntrenador);
-            this.tvNombre=view.findViewById(R.id.nombreEquipo);
-            this.tvNombre=view.findViewById(R.id.nombreEquipo);
-            this.tvNombre=view.findViewById(R.id.nombreEquipo);
-            this.tvNombre=view.findViewById(R.id.nombreEquipo);
-            this.tvNombre=view.findViewById(R.id.nombreEquipo);
-            this.tvNombre=view.findViewById(R.id.nombreEquipo);
-
-
+            this.tvEntrenador=view.findViewById(R.id.irEntrenador);
+            this.puntosAnotados=view.findViewById(R.id.puntosAnotados);
+            this.puntosFavor=view.findViewById(R.id.puntosFavor);
+            this.puntosContra=view.findViewById(R.id.puntosContra);
+            this.cesto1=view.findViewById(R.id.cestosAnotados1);
+            this.cesto2=view.findViewById(R.id.cestosAnotados2);
+            this.cesto3=view.findViewById(R.id.cestosAnotados3);
         }
-
     }
-
 }

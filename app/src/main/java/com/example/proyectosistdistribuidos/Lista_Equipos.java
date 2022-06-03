@@ -1,17 +1,17 @@
 package com.example.proyectosistdistribuidos;
 
 public class Lista_Equipos {
+
     private String nombreEquipo;
-
     private String nombreEntrenador;
-    private int puntosAnotados;
-    private int puntosFavor;
-    private int puntosContra;
-    private int cesto1;
-    private int cesto2;
-    private int cesto3;
+    private String puntosAnotados;
+    private String puntosFavor;
+    private String puntosContra;
+    private String cesto1;
+    private String cesto2;
+    private String cesto3;
 
-    public Lista_Equipos(String nombreEquipo, String nombreEntrenador, int puntosAnotados, int puntosFavor, int puntosContra, int cesto1, int cesto2, int cesto3) {
+    public Lista_Equipos(String nombreEquipo, String nombreEntrenador, String puntosAnotados, String puntosFavor, String puntosContra, String cesto1, String cesto2, String cesto3) {
         this.nombreEquipo = nombreEquipo;
         this.nombreEntrenador = nombreEntrenador;
         this.puntosAnotados = puntosAnotados;
@@ -38,51 +38,51 @@ public class Lista_Equipos {
         this.nombreEntrenador = nombreEntrenador;
     }
 
-    public int getPuntosAnotados() {
+    public String getPuntosAnotados() {
         return puntosAnotados;
     }
 
-    public void setPuntosAnotados(int puntosAnotados) {
+    public void setPuntosAnotados(String puntosAnotados) {
         this.puntosAnotados = puntosAnotados;
     }
 
-    public int getPuntosFavor() {
+    public String getPuntosFavor() {
         return puntosFavor;
     }
 
-    public void setPuntosFavor(int puntosFavor) {
+    public void setPuntosFavor(String puntosFavor) {
         this.puntosFavor = puntosFavor;
     }
 
-    public int getPuntosContra() {
+    public String getPuntosContra() {
         return puntosContra;
     }
 
-    public void setPuntosContra(int puntosContra) {
+    public void setPuntosContra(String puntosContra) {
         this.puntosContra = puntosContra;
     }
 
-    public int getCesto1() {
+    public String getCesto1() {
         return cesto1;
     }
 
-    public void setCesto1(int cesto1) {
+    public void setCesto1(String cesto1) {
         this.cesto1 = cesto1;
     }
 
-    public int getCesto2() {
+    public String getCesto2() {
         return cesto2;
     }
 
-    public void setCesto2(int cesto2) {
+    public void setCesto2(String cesto2) {
         this.cesto2 = cesto2;
     }
 
-    public int getCesto3() {
+    public String getCesto3() {
         return cesto3;
     }
 
-    public void setCesto3(int cesto3) {
+    public void setCesto3(String cesto3) {
         this.cesto3 = cesto3;
     }
 }
