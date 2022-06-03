@@ -7,19 +7,37 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ListAdapter;
+import android.widget.ListView;
 import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class EquiposActivity extends AppCompatActivity {
 
     Button irJugador,irEntrenador,irDesempeñoEquipo;
     ImageView imageView;
+    ListView listView;
+    List <Lista_Equipos>lista;
+    Equipos_Adapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_equipos);
 
-        irJugador = findViewById(R.id.irJugador);
+
+        listView=findViewById(R.id.listviewEquipos);
+
+        setLista();
+
+        Equipos_Adapter adapter = new Equipos_Adapter(this, R.layout.lista_equipos, lista);
+        listView.setAdapter(adapter);
+
+
+
+        /*irJugador = findViewById(R.id.irJugador);
         irEntrenador = findViewById(R.id.irEntrenador);
         irDesempeñoEquipo = findViewById(R.id.irDesempeñoEquipo);
         imageView = findViewById(R.id.imgView);
@@ -56,6 +74,15 @@ public class EquiposActivity extends AppCompatActivity {
                 Intent detallado = new Intent(getBaseContext(),Info_Equipos.class);
                 startActivity(detallado);
             }
-        });
+        });*/
+    }
+
+    private void setLista() {
+        lista = new ArrayList<>();
+        lista.add(new Lista_Equipos("Lakers","Juan Gabriel","9","15","10","2","3","5"));
+        lista.add(new Lista_Equipos("Ushuni","Pedro Fernandez","25","2","6","7","2","1"));
+        lista.add(new Lista_Equipos("Lakers","Juan Gabriel","15","9","2","7","5","6"));
+
+
     }
 }
