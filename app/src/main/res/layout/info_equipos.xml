@@ -47,41 +47,13 @@
                 android:background="#206B75">
 
                 <TextView
-                    android:id="@+id/tvCodigoCuentaCu"
+                    android:id="@+id/txtTituloFormacion"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="2dp"
                     android:text="Formacion"
                     android:textColor="@color/white"
                     android:textSize="24sp" />
-
-                <TextView
-                    android:id="@+id/tvNombreCu"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Jugador Claudia Jimenez en Base"
-                    android:textColor="@color/white" />
-
-                <TextView
-                    android:id="@+id/tvPaternoCu"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Jugador Antonio Mendez en escolta"
-                    android:textColor="@color/white" />
-
-                <TextView
-                    android:id="@+id/tvPaisCu"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Jugador Jose Carreño en Base"
-                    android:textColor="@color/white" />
-
-                <TextView
-                    android:id="@+id/tvFechaNacCu"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Jugador Pablo Dominguez en Base"
-                    android:textColor="@color/white" />
 
             </LinearLayout>
 
@@ -136,6 +108,10 @@
                     android:textColor="@color/white" />
 
             </LinearLayout>
+
+            <ListView
+                android:layout_width="182dp"
+                android:layout_height="158dp" />
 
 
         </RelativeLayout>
