@@ -35,8 +35,6 @@ public class EquiposActivity extends AppCompatActivity {
         Equipos_Adapter adapter = new Equipos_Adapter(this, R.layout.lista_equipos, lista);
         listView.setAdapter(adapter);
 
-
-
         /*irJugador = findViewById(R.id.irJugador);
         irEntrenador = findViewById(R.id.irEntrenador);
         irDesempeñoEquipo = findViewById(R.id.irDesempeñoEquipo);
@@ -81,8 +79,8 @@ public class EquiposActivity extends AppCompatActivity {
         lista = new ArrayList<>();
         lista.add(new Lista_Equipos("Lakers","Juan Gabriel","9","15","10","2","3","5"));
         lista.add(new Lista_Equipos("Ushuni","Pedro Fernandez","25","2","6","7","2","1"));
-        lista.add(new Lista_Equipos("Lakers","Juan Gabriel","15","9","2","7","5","6"));
-
+        lista.add(new Lista_Equipos("BoliviaBasket","Pedro Fernandez","15","9","2","7","5","6"));
+        lista.add(new Lista_Equipos("La Paz BC","Alejando Sans","15","9","2","7","5","6"));
 
     }
 }
