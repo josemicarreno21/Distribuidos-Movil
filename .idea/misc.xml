@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ASUS TECH}/Desktop/ProyectoDistribuidosMovil/Distribuidos-Movil/app/src/main/res/layout/activity_cancha_info.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS TECH}/Desktop/ProyectoDistribuidosMovil/Distribuidos-Movil/app/src/main/res/layout/activity_desempenio.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS TECH}/Desktop/ProyectoDistribuidosMovil/Distribuidos-Movil/app/src/main/res/layout/activity_entrenador.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS TECH}/Desktop/ProyectoDistribuidosMovil/Distribuidos-Movil/app/src/main/res/layout/info_desempenio_equipo.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS TECH}/Desktop/ProyectoDistribuidosMovil/Distribuidos-Movil/app/src/main/res/layout/info_equipos.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS TECH}/Desktop/ProyectoDistribuidosMovil/Distribuidos-Movil/app/src/main/res/layout/lista_formacion.xml" value="0.25" />
         <entry key="..\:/Users/SERGIO/AndroidStudioProjects/Distribuidos-Movil/app/src/main/res/layout/activity_cancha_info.xml" value="0.1408514492753623" />
         <entry key="..\:/Users/SERGIO/AndroidStudioProjects/Distribuidos-Movil/app/src/main/res/layout/activity_desempenio.xml" value="0.1408514492753623" />
         <entry key="..\:/Users/SERGIO/AndroidStudioProjects/Distribuidos-Movil/app/src/main/res/layout/activity_equipos.xml" value="0.22" />
