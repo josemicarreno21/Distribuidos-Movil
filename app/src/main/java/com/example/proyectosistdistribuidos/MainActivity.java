@@ -2,64 +2,43 @@ package com.example.proyectosistdistribuidos;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.TextView;
+import android.widget.ListView;
+
+import com.example.proyectosistdistribuidos.clases.ConexionPG;
+import com.example.proyectosistdistribuidos.clases.Partidos;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageButton btnEquipo1, btnEquipo2;
-    Button irCancha;
+    ListView listView;
+    List<Partidos>partidosList;
+    Lista_Partidos_Adapter lista_partidos_adapter;
 
     private static ConexionPG con=new ConexionPG();
-    TextView txtXD;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Recuperar un campo de la BD
-        txtXD = findViewById(R.id.txtXD);
-        try {
-            String storeProcedureCall="{CALL }";
-        }catch (Exception ex){
+        listView=findViewById(R.id.lvPartidos);
+        cargarPartidos();
+        lista_partidos_adapter=new Lista_Partidos_Adapter(partidosList,R.layout.lista_partidos,this);
+        listView.setAdapter(lista_partidos_adapter);
+    }
 
-        }
-
-        btnEquipo1 = findViewById(R.id.btnEquipo1);
-        btnEquipo1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getBaseContext(),EquiposActivity.class);
-                startActivity(i);
-                //finish();
-            }
-        });
-
-        btnEquipo2 = findViewById(R.id.btnEquipo2);
-        btnEquipo2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getBaseContext(),EquiposActivity.class);
-                startActivity(i);
-                //finish();
-            }
-        });
-
-        irCancha = findViewById(R.id.irCanchaInfo);
-        irCancha.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent cancha = new Intent(getBaseContext(),CanchaInfo.class);
-                startActivity(cancha);
-                //finish();
-            }
-        });
-
+    private void cargarPartidos(){
+        partidosList = new ArrayList<>();
+        partidosList.add(new Partidos(1,"Equipo Local 1","Equipo Visitante 1",
+                "03/06/2022","15:30","La Paz", "1","1",1,1));
+        partidosList.add(new Partidos(2,"Equipo Local 2","Equipo Visitante 2",
+                "05/07/2022","18:30","Cochabamba", "2","2",2,2));
     }
 }

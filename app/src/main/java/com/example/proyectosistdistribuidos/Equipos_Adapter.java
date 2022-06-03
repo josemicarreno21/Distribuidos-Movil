@@ -42,7 +42,7 @@ public class Equipos_Adapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        ViewHol
+        //ViewHol
         return null;
     }
 

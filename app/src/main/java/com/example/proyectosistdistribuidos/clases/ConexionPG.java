@@ -1,4 +1,4 @@
-package com.example.proyectosistdistribuidos;
+package com.example.proyectosistdistribuidos.clases;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,7 +9,7 @@ public class ConexionPG {
     public Connection conexion(){
         try {
             Class.forName("org.postgresql.Driver");
-            conexion= DriverManager.getConnection("172.22.0.3","root", "admin123");
+            conexion= DriverManager.getConnection("localhost:3000/proyecto/v1/players","root", "admin123");
         }catch (Exception er){
             System.err.println(er.getMessage());
         }
