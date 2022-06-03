@@ -42,7 +42,7 @@ public class EquiposActivity extends AppCompatActivity {
         irDesempeñoEquipo = findViewById(R.id.irDesempeñoEquipo);
         imageView = findViewById(R.id.imgView);
 
-        irJugador.setOnClickListener(new View.OnClickListener() {
+        /*irJugador.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent jugador = new Intent(getBaseContext(),JugadorActivity.class);

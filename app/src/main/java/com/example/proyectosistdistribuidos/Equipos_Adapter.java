@@ -1,10 +1,12 @@
 package com.example.proyectosistdistribuidos;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -17,6 +19,7 @@ public class Equipos_Adapter extends BaseAdapter {
     private Context context;
     private int layout;
     private List<Lista_Equipos> lista_equipos;
+    Button irJugador,irEntrenador,irDesempeñoEquipo;
 
     public Equipos_Adapter(Context context, int layout, List<Lista_Equipos> lista_equipos) {
         this.context = context;
@@ -75,6 +78,32 @@ public class Equipos_Adapter extends BaseAdapter {
         holder.cesto2.setText(cesto2);
         holder.cesto3.setText(cesto3);
 
+        holder.btnEntrenador.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(context,EntrenadorActivity.class);
+                context.startActivity(i);
+            }
+        });
+
+        holder.verJugadorInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(context,Info_Equipos.class);
+                context.startActivity(i);
+            }
+        });
+
+        holder.verDesempeño.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(context,Desempenio.class);
+                context.startActivity(i);
+            }
+        });
+
+
+
         return convertView;
     }
 
@@ -87,6 +116,7 @@ public class Equipos_Adapter extends BaseAdapter {
         private TextView cesto1;
         private TextView cesto2;
         private TextView cesto3;
+        private Button btnEntrenador,verJugadorInfo,verDesempeño;
 
         public ViewHolder (View view){
             this.tvNombre=view.findViewById(R.id.nombreEquipo);
@@ -97,6 +127,10 @@ public class Equipos_Adapter extends BaseAdapter {
             this.cesto1=view.findViewById(R.id.cestosAnotados1);
             this.cesto2=view.findViewById(R.id.cestosAnotados2);
             this.cesto3=view.findViewById(R.id.cestosAnotados3);
+
+            this.btnEntrenador=view.findViewById(R.id.irEntrenador);
+            this.verDesempeño=view.findViewById(R.id.irDesempeñoEquipo);
+            this.verJugadorInfo=view.findViewById(R.id.irJugador);
         }
     }
 }
