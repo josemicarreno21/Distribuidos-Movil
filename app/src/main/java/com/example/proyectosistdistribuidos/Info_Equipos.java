@@ -30,10 +30,10 @@ public class Info_Equipos extends AppCompatActivity {
     }
 
     private void cargarJugadores() {
-        jugadoresList = new ArrayList<>();
+        /*jugadoresList = new ArrayList<>();
         jugadoresList.add(new Jugadores("1","Jose","Carreno Angola", "02-06-2000",
                 "","Delantero","180","1"));
         jugadoresList.add(new Jugadores("2","Claudia","Jimenez Herera", "02-06-2001",
-                "","Defensa","175","2"));
+                "","Defensa","175","2"));*/
     }
 }

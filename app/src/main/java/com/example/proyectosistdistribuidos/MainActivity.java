@@ -36,9 +36,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void cargarPartidos(){
         partidosList = new ArrayList<>();
-        partidosList.add(new Partidos(1,"Equipo Local 1","Equipo Visitante 1",
+        /*partidosList.add(new Partidos(1,"Equipo Local 1","Equipo Visitante 1",
                 "03/06/2022","15:30","La Paz", "1","1",1,1));
         partidosList.add(new Partidos(2,"Equipo Local 2","Equipo Visitante 2",
-                "05/07/2022","18:30","Cochabamba", "2","2",2,2));
+                "05/07/2022","18:30","Cochabamba", "2","2",2,2));*/
     }
 }
