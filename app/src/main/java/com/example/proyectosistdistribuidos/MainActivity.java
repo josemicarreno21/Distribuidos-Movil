@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.example.proyectosistdistribuidos.clases.ConexionPG;
 import com.example.proyectosistdistribuidos.clases.Partidos;
+import com.example.proyectosistdistribuidos.clases.listaPartidos;
 
 import java.sql.CallableStatement;
 import java.sql.Types;
@@ -23,10 +24,10 @@ public class MainActivity extends AppCompatActivity {
 
     ListView listView;
     List<Partidos>partidosList;
+    List<listaPartidos>partidosLista;
     Lista_Partidos_Adapter lista_partidos_adapter;
 
     private static ConexionPG con=new ConexionPG();
-    TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,17 +44,16 @@ public class MainActivity extends AppCompatActivity {
 
     private void cargarPartidos(){
         partidosList = new ArrayList<>();
-        /*partidosList.add(new Partidos(1,"Equipo Local 1","Equipo Visitante 1",
-                "03/06/2022","15:30","La Paz", "1","1",1,1));
-        partidosList.add(new Partidos(2,"Equipo Local 2","Equipo Visitante 2",
-                "05/07/2022","18:30","Cochabamba", "2","2",2,2));*/
-
-
+        partidosList.add(new Partidos("1","Equipo Local 1","Equipo Visitante 1",
+                "03/06/2022","15:30","La Paz", "1","1"));
     }
 
     private void Cargar_Partidos(){
         try {
-            String query="select * from tpartidos";
+            String query="select Eql.imagen_equipo, Eqv.imagen_equipo, Sc.puntos, Par.fecha_partido, Par.hora_partido, Par.lugar_partido\n" +
+                    "from tpartidos Par inner join tequipos Eql on Par.id_equipo_l=Eql.id_equipo\n" +
+                    "    inner join tequipos Eqv on Par.id_equipo_v=Eqv.id_equipo\n" +
+                    "    inner join tscore Sc on Par.id_score=Sc.id_score";
             CallableStatement cstmt=con.conexion().prepareCall(query);
             cstmt.registerOutParameter(1, Types.VARCHAR);
             cstmt.registerOutParameter(2, Types.VARCHAR);
@@ -61,22 +61,19 @@ public class MainActivity extends AppCompatActivity {
             cstmt.registerOutParameter(4, Types.VARCHAR);
             cstmt.registerOutParameter(5, Types.VARCHAR);
             cstmt.registerOutParameter(6, Types.VARCHAR);
-            cstmt.registerOutParameter(7, Types.VARCHAR);
-            cstmt.registerOutParameter(8, Types.VARCHAR);
 
-            String id_partido=cstmt.getString(1);
-            String id_equipo_l=cstmt.getString(2);
-            String id_equipo_v=cstmt.getString(3);
+            String imagen_equipo_l=cstmt.getString(1);
+            String imagen_equipo_v=cstmt.getString(2);
+            String puntos=cstmt.getString(3);
             String fecha_partido=cstmt.getString(4);
             String hora_partido=cstmt.getString(5);
             String lugar_partidov=cstmt.getString(6);
-            String id_cancha=cstmt.getString(7);
-            String id_score=cstmt.getString(8);
 
-            textView=findViewById(R.id.textView);
-            textView.setText(id_partido);
+            partidosLista.add(new listaPartidos(imagen_equipo_l,imagen_equipo_v,puntos,
+                    fecha_partido,hora_partido,lugar_partidov));
+
         }catch (Exception ex){
-            Toast.makeText(getApplicationContext(),ex.toString(),Toast.LENGTH_LONG).show();
+            //Toast.makeText(getApplicationContext(),ex.toString(),Toast.LENGTH_LONG).show();
         }
     }
 }
