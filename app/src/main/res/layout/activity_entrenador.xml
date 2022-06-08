@@ -35,7 +35,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="Sergio Santos Hernández"
+            android:text="Juan Gabriel Hernández"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="20sp"
