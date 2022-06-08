@@ -60,9 +60,9 @@
                         android:layout_gravity="bottom"
                         android:layout_marginLeft="10dp"
                         android:layout_marginBottom="5dp"
-                        android:text="Stadium"
+                        android:text="Burbuja Orlando"
                         android:textColor="@color/white"
-                        android:textSize="35dp"
+                        android:textSize="30dp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -80,7 +80,7 @@
                         android:layout_gravity="bottom"
                         android:layout_marginLeft="10dp"
                         android:layout_marginBottom="5dp"
-                        android:text="La Paz - Bolivia, Miraflores "
+                        android:text="Bay Lake, Florida, Estados Unidos"
                         android:textColor="@color/white"
                         android:textSize="20dp" />
                 </LinearLayout>
@@ -101,19 +101,19 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Arbitro 1"
+                        android:text="Danny Crawford"
                         android:textSize="20dp"
                         android:textColor="@color/white"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Arbitro 2"
+                        android:text="Joey Crawford"
                         android:textSize="20dp"
                         android:textColor="@color/white"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Arbitro 3"
+                        android:text="Monty McCutchen"
                         android:textSize="20dp"
                         android:textColor="@color/white"/>
 
