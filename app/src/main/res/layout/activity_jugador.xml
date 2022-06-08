@@ -35,7 +35,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="Nombre y Apellido del Jugador"
+            android:text="Michael Jordan"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="20sp"
@@ -57,7 +57,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Edad: .......\nFecha de nacimiento:.....\nAltura:........\nRedes Sociales:\n-.......\n-........\n-........"
+            android:text="- Edad: 59 años\n- Fecha de nac.: 19/02/1963\n- Altura:1.98 m\n- Redes Sociales:\n Instagram: jumpman23"
             android:textColor="@color/white"
             android:textSize="30sp" />
     </LinearLayout>
