@@ -56,7 +56,7 @@ public class Formacion_Adapter extends BaseAdapter {
             holder=(Formacion_Adapter.ViewHolder)convertView.getTag();
         }
         Jugadores jugadores=this.jugadoresList.get(i);
-        holder.txtFormacion.setText(jugadores.getNombre_jugador()+" "+jugadores.getNombre_jugador()+": "+jugadores.getPosicion_jugador());
+        //holder.txtFormacion.setText(jugadores.getNombre_jugador()+" "+jugadores.getNombre_jugador()+": "+jugadores.getPosicion_jugador());
 
 
         return convertView;
