@@ -78,9 +78,9 @@ public class EquiposActivity extends AppCompatActivity {
     private void setLista() {
         lista = new ArrayList<>();
         lista.add(new Lista_Equipos("Lakers","Juan Gabriel","9","15","10","2","3","5"));
-        lista.add(new Lista_Equipos("Ushuni","Pedro Fernandez","25","2","6","7","2","1"));
-        lista.add(new Lista_Equipos("BoliviaBasket","Pedro Fernandez","15","9","2","7","5","6"));
-        lista.add(new Lista_Equipos("La Paz BC","Alejando Sans","15","9","2","7","5","6"));
+        //lista.add(new Lista_Equipos("Ushuni","Pedro Fernandez","25","2","6","7","2","1"));
+        //lista.add(new Lista_Equipos("BoliviaBasket","Pedro Fernandez","15","9","2","7","5","6"));
+        //lista.add(new Lista_Equipos("La Paz BC","Alejando Sans","15","9","2","7","5","6"));
 
     }
 }
